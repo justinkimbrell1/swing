@@ -356,7 +356,8 @@ jQuery(function($){
 <script>
 jQuery(function($){
 	var url_params = window.location.href.split('?')[1];
-	console.log(url_params);
+	//console.log( url_params );
+	url_params = utm_params_cookies(url_params);
 	
 	$(window).load(function() {
 		// if there are URL parameters
@@ -375,6 +376,66 @@ jQuery(function($){
 			});
 		}
 	});
+	
+	function utm_params_cookies(url_params){
+		
+		var additional_params = '';
+		
+		if( url_params === undefined ){
+			url_params = '';
+		}
+		
+		// utm_source
+		if( !url_params.includes('utm_source=') && au_get_cookie('utm_source') !== '' && au_get_cookie('utm_source') !== 'undefined'){
+			additional_params += '&utm_source=' + au_get_cookie('utm_source');
+		}
+		
+		// utm_medium
+		if( !url_params.includes('utm_medium=') && au_get_cookie('utm_medium') !== '' && au_get_cookie('utm_medium') !== 'undefined'){
+			additional_params += '&utm_medium=' + au_get_cookie('utm_medium');
+		}
+		
+		// utm_campaign
+		if( !url_params.includes('utm_campaign=') && au_get_cookie('utm_campaign') !== '' && au_get_cookie('utm_campaign') !== 'undefined'){
+			additional_params += '&utm_campaign=' + au_get_cookie('utm_campaign');
+		}
+		
+		// utm_term
+		if( !url_params.includes('utm_term=') && au_get_cookie('utm_term') !== '' && au_get_cookie('utm_term') !== 'undefined'){
+			additional_params += '&utm_term=' + au_get_cookie('utm_term');
+		}
+		
+		// utm_content
+		if( !url_params.includes('utm_content=') && au_get_cookie('utm_content') !== '' && au_get_cookie('utm_content') !== 'undefined'){
+			additional_params += '&utm_content=' + au_get_cookie('utm_content');
+		}
+		
+		// remove the first "&"
+		additional_params = additional_params.substring(1);
+		
+		if( url_params !== '' ){
+			return additional_params + '&' + url_params;
+		}
+		
+		// return
+		return additional_params;
+		
+	}
+	
+	function au_get_cookie(cname) {
+	  let name = cname + "=";
+	  let ca = document.cookie.split(';');
+	  for(let i = 0; i < ca.length; i++) {
+		let c = ca[i];
+		while (c.charAt(0) == ' ') {
+		  c = c.substring(1);
+		}
+		if (c.indexOf(name) == 0) {
+		  return c.substring(name.length, c.length);
+		}
+	  }
+	  return "";
+	}
 	
 })
 </script>
