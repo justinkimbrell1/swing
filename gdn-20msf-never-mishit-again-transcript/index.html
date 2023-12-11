@@ -488,29 +488,6 @@ setTimeout(
 <script>
 jQuery(function($){
 	var url_params = window.location.href.split('?')[1];
-	console.log(url_params);
-	
-	// if there are URL parameters
-	//console.log('im clicked')
-	if( url_params ){
-		$('.offer-CTA a').each(function(i, btn_object){
-			var btn_default_link = $(btn_object).attr('href').replace(url_params, '');
-			var new_link = btn_default_link + '?' + url_params;
-			console.log(btn_default_link);
-
-			if( btn_default_link.includes('?') ){
-				new_link = btn_default_link + '&' + url_params;
-			}
-			$(btn_object).attr('href', new_link);
-			console.log(new_link);
-		});
-	}
-	
-})
-</script>
-<script>
-jQuery(function($){
-	var url_params = window.location.href.split('?')[1];
 	//console.log( url_params );
 	url_params = utm_params_cookies(url_params);
 	
@@ -518,7 +495,7 @@ jQuery(function($){
 		// if there are URL parameters
 		//console.log('im clicked')
 		if( !$('body').hasClass('tve_editor_page') && url_params ){
-			$('.offer-CTA2 a').each(function(i, btn_object){
+			$('.offer-CTA a').each(function(i, btn_object){
 				var btn_default_link = $(btn_object).attr('href').replace(url_params, '');
 				var new_link = btn_default_link + '?' + url_params;
 				console.log(btn_default_link);
