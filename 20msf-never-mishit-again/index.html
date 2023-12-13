@@ -359,7 +359,7 @@ jQuery(function($){
 	//console.log( url_params );
 	url_params = utm_params_cookies(url_params);
 	
-	$(window).load(function() {
+	$(document).ready(function() {
 		// if there are URL parameters
 		//console.log('im clicked')
 		if( !$('body').hasClass('tve_editor_page') && url_params ){
