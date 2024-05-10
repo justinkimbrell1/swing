@@ -1,0 +1,331 @@
+*{
+    text-decoration: none !important;
+  }
+
+del{
+    text-decoration: line-through !important;
+}
+
+.improve .container {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+ .font-Montserrat{
+    font-family: Montserrat;
+} 
+.banner-section {
+    background: #090446;
+}
+p.banner-top-text {
+    width: 65%;
+    font-size: 23px;
+    line-height: 1.15;
+    font-family: "Helvetica Neue", Helvetica,Arial,sans-serif;
+    font-weight:900 !important;
+}
+p.banner-sub-text {
+    width: 58%;
+    font-size: 30px;
+    line-height: 1.15;
+    font-family: "Helvetica Neue", Helvetica,Arial,sans-serif;
+}
+.banner-section h1 {
+    font-size: 80px;
+    color: #cfb974;
+    font-weight: 900;
+    width: 90%;
+    line-height: 1;
+}
+/* Begin Hitting section */
+.if-you-struggle p {
+    font-size: 20px;
+    font-family: "Helvetica Neue", Helvetica,Arial,sans-serif;
+}
+.text-content .container {
+    max-width: 800px;
+}
+.if-you-struggle h2 {
+    font-size: 40px;
+    color: #090446;
+    font-weight: 800 !important;
+    font-family: "Helvetica Neue", Helvetica,Arial,sans-serif;
+}
+.if-you-struggle1 h2 {
+    font-size: 34px;
+    color: #090446;
+    font-weight: 800 !important;
+    font-family: "Helvetica Neue", Helvetica,Arial,sans-serif;
+}
+.if-you-struggle1 h3 {
+    font-size: 28px;
+    color: #090446;
+    font-weight: 400;
+    font-family: "Helvetica Neue", Helvetica,Arial,sans-serif;
+}
+.if-you-struggle1 p {
+    font-size: 20px;
+    color: #090446;
+    font-weight: 400 !important;
+    font-family: "Helvetica Neue", Helvetica,Arial,sans-serif;
+}
+.font-open-sans{
+    font-family: "Open Sans";
+}
+.peter span {
+    font-size: 24px;
+}
+/* card-section */
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url(../Helvetica-Neue-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat",  "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .Helvetica{
+    font-family: Helvetica; 
+}
+.mauto{
+    margin: 0 auto;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mb-60{
+    margin-bottom: 60px;
+}
+.Helvetica-Neue{
+    font-family: "Helvetica Neue" ,Helvetica ;
+}
+.font-open-sans{
+    font-family: "Open Sans";
+}
+.blue{
+    color: #090446;
+}
+.light-blue{
+    color: #0442d2;
+}
+.red{
+   color: #ff0000;
+}
+.dark-black{
+    color: #0c1115;
+}
+.text-gray{
+    color: #6a6b6c;
+}
+.container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+}
+.row{
+    padding: 0px;
+    margin: 0;
+}
+.sccess-card-inner{
+    background-color: #090446; 
+    border-radius: 10px; 
+    padding: 10px 20px 30px;
+}
+.card-heading-text{
+    font-size: 22px; 
+}
+.card-heading path {
+    fill: #fff ;
+}
+path.youtube {
+    fill: #6a6b6c;
+}
+.pay-cards path {
+    fill: #6a6b6c;
+}
+.button-green path {
+    fill: #fff;
+}
+.ctext-heading{
+    font-size: 34px; 
+ max-width: 602px; 
+}
+.ctext-subheading{
+    font-size: 28px;
+    max-width: 700px; 
+}
+.cimg-sec img{
+    width: 193px;
+}
+.cimg-heading, .instant-acc-text{
+   font-size: 21px; 
+     max-width: 602px; 
+}
+.para-text{
+    font-size: 20px;
+}
+.total-val{
+    font-size: 48px;
+}
+.offer-text{
+    font-size: 22px;
+}
+.button-texts{
+    font-size: 28px;
+    text-shadow: rgba(0, 0, 0, 0.25) 2px 2px 2px;
+}
+.button-green{
+    background-image: linear-gradient(rgb(68, 157, 68) 0%, rgb(34, 79, 34) 100%) ;
+    border: 2px solid rgb(43, 90, 43);
+    border-radius: 20px;
+    box-shadow: rgba(0,0,0,0.27) 3px 5px 12px 4px,rgba(0,0,0,0.25) 0px 8px 12px -2px inset;
+}
+.button-width{
+    max-width: 444px;
+}
+.overnight-link{
+    font-size: 24px;
+    font-weight: 500;
+    max-width: 670px;
+}
+.card-img-content{
+max-width: 500px;
+}
+@media only screen and (max-width: 767px) 
+{
+    ul.d-md-flex.list-unstyled.text-white.footer_content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width:575px){
+    .full-width, .w-50{
+        width: 100% !important;
+    }
+    .banner-section h1 {
+        font-size: 44px;
+    }
+    p.banner-top-text {
+        font-size: 17px;
+    }
+    p.banner-sub-text {
+        font-size: 22px;
+    }
+
+    .if-you-struggle p{
+        font-size: 18px;
+    }
+    .if-you-struggle h2{
+        font-size: 26px;
+    }
+    .peter span {
+        font-size: 22px;
+    } 
+}
+
+/* card-section */
+@media only screen and (min-width: 578px) and (max-width:767px){
+.w-60, .w-40, .w-50{
+    width: 100%;
+}
+.total-val{
+    font-size: 44px;
+}
+.offer-text{
+    font-size: 20px;
+}
+}
+@media only screen and (min-width: 768px) and (max-width:991px){
+    .tablet-width{
+        width: 100% !important;
+    }  
+    .access-card-outer {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+.bg-f7f7f7
+{
+    background-color: #f7f7f7;
+}
+.footer-section1.header_background {
+    background-color: #090446;
+}
+.--page-section-max-width {
+    border-radius: 10px;
+    }
+    .card-container {
+        max-width: 700px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px 10px;
+    }
+    hr.border_line {
+        border-top: 1px solid rgba(66,66,66,0.5) !important;
+    }
+    @media only screen and (max-width: 425px) 
+    {
+        .col-2.col-sm-3.text-right.pl-3.pr-0 svg.tcb-icon.text-white , .col-2.col-sm-3.text-left.pl-3.pr-0 svg.tcb-icon  {
+            width: 40px !important;
+        }
+        section.card-sec img {
+            width: 200px;
+            padding: 20px;
+        }
+        .container.if-you-struggle1 {
+            padding: 0px;
+        }
+        .shallowing-line.text-center.w-50.m-auto {
+            width: 100% !important;
+        }
+        .shallowing-line.m-auto img {
+            width: 100% !important;
+        }
+        h2.font-open-sans {
+            font-size: 26px !important;
+            font-family: 'Open Sans';
+        }
+        .col-md-6.col-lg-6.col-sm-12.shallow , .col-lg-6.col-md-6.col-sm-6.if-you-struggle.text-left.shallow {
+            order: 1;
+        }
+        .col-md-6.col-lg-6.col-sm-12 , .col-lg-6.col-md-6.col-sm-6.if-you-struggle.text-left {
+            order: 2;
+        }
+        h2.font-open-sans {
+            font-size: 26px !important;
+            font-family: 'Open Sans';
+        }
+        .button-texts {
+            font-size: 20px;
+            text-shadow: rgba(0, 0, 0, 0.25) 2px 2px 2px;
+        }
+        .icon-display {
+            width: 37px;
+        }
+    }
+    .icon-display{
+        width:50px;
+      }
+      h2.instant-acc-text.text-gray.txt-avail{
+        font-size:18px;
+        font-weight: 500 !important;
+      }
+      h2.font-open-sans{
+        font-size: 40px !important;
+        font-family: 'Open Sans';
+      }
+      h2.one.font-open-sans {
+        font-size: 48px;
+        font-family: 'Open Sans';
+    }
+
+    
